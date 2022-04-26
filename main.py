@@ -2,9 +2,6 @@ from waitress import serve
 from flask import Flask, render_template,jsonify
 from bitcoinrpc.authproxy import AuthServiceProxy, JSONRPCException
 
-username = "rpcuser"
-password = "rpcpassword"
-
 app = Flask(__name__, template_folder='templateFiles', static_folder='staticFiles')
 
 apiversion=2.1
